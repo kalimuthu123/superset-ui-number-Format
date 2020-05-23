@@ -1,6 +1,5 @@
-import 'package:cpformatter/cpformatter.dart';
+import 'package:number_format/number_format.dart';
 
-String formatted = IndiannumFormat(1548979724964);
 
 void main() {
   print(formatNumber('.2f', 1000));
