@@ -1,0 +1,1 @@
+ createDurationFormatter ( [ config = const { } ] ) { final = config ; return new NumberFormatter ( { "description" : description , "formatFunc" : ( value ) => prettyMsFormatter ( value * multiplier , prettyMsOptions ) , "id" : id ?  ? "duration_format" :  :  , "label" : label ?  ? '''Duration formatter''' :  :  } ) ; }

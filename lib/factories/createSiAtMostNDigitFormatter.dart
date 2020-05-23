@@ -1,0 +1,3 @@
+ import "package:d3-format.dart" show d3Format ; createSiAtMostNDigitFormatter ( [ dynamic config = const { } ] ) { final = config ; final siFormatter = d3Format ( '''.${ n}s''' ) ; return new NumberFormatter ( { "description" : description , "formatFunc" : ( value ) { final si = siFormatter ( value ) ;
+ /* Removing trailing `.00` if any */
+ return si . slice ( - 1 ) < "A" ? parseFloat ( si ) . toString ( ) : si ; } , "id" : id ?  ? '''si_at_most_${ n}_digit''' :  :  , "label" : label ?  ? '''SI with at most ${ n} significant digits''' :  :  } ) ; }
